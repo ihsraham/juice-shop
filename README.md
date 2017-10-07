@@ -8,9 +8,12 @@
 
 > [The most trustworthy online shop out there.](https://twitter.com/dschadow/status/706781693504589824)
 > ([@dschadow](https://github.com/dschadow))
+> —
+> [The best juice shop on the whole internet!](https://twitter.com/shehackspurple/status/907335357775085568)
+> ([@shehackspurple](https://twitter.com/shehackspurple))
 
-OWASP Juice Shop is an intentionally insecure web app for security
-trainings written entirely in Javascript which encompasses the entire
+OWASP Juice Shop is an intentionally insecure web application written
+entirely in JavaScript which encompasses the entire range of
 [OWASP Top Ten](https://www.owasp.org/index.php/OWASP_Top_Ten) and other
 severe security flaws.
 
@@ -117,7 +120,7 @@ docker run -d -p 80:3000 bkimminich/juice-shop
 > and login. Apart from the visual/audible effect, the attacker also
 > installed [an input logger](http://192.168.33.10/logger.php) to grab
 > credentials! This could easily run on a 3rd party server in real life!
-> 
+>
 > _This feature is only available when running a Vagrant box. A
 > recording of the effect is available on Youtube:_
 > [:tv:](https://www.youtube.com/watch?v=L7ZEMWRm7LA)
@@ -125,18 +128,14 @@ docker run -d -p 80:3000 bkimminich/juice-shop
 ## Node.js version compatibility
 
 OWASP Juice Shop officially supports the following versions of
-[node.js](http://nodejs.org) and offers Docker images and packaged
-distributions accordingly:
+[node.js](http://nodejs.org) in line as close as possible with the
+official [node.js LTS schedule](https://github.com/nodejs/LTS). Docker
+images and packaged distributions are offered accordingly:
 
-| node.js | [Docker images](https://registry.hub.docker.com/u/bkimminich/juice-shop) (from `master`) | Docker snapshots (from `develop`) | [Packaged distributions](https://github.com/bkimminich/juice-shop/releases/latest)       |
-|:--------|:-----------------------------------------------------------------------------------------|:----------------------------------|:-----------------------------------------------------------------------------------------|
-| 4.x     | `node4`                                                                                  | `node4-snapshot`                  | `juice-shop-<version>_node4_windows_x64.zip`, `juice-shop-<version>_node4_linux_x64.tgz` |
-| __6.x__ | __`latest`__, `node6`                                                                    | `snapshot`, `node6-snapshot`      | `juice-shop-<version>_node6_windows_x64.zip`, `juice-shop-<version>_node6_linux_x64.tgz` |
-| 8.x     | `node8`                                                                                  | `node8-snapshot`                  | `juice-shop-<version>_node8_windows_x64.zip`, `juice-shop-<version>_node8_linux_x64.tgz` |
-
-> The stable Docker images are built from `master` while the snapshot
-> images are built from `develop` branch. The latter contain unreleased
-> features but cannot be considered stable.
+| node.js | [Docker image](https://registry.hub.docker.com/u/bkimminich/juice-shop)             | [Packaged distributions](https://github.com/bkimminich/juice-shop/releases/latest)       |
+|:--------|:------------------------------------------------------------------------------------|:-----------------------------------------------------------------------------------------|
+| __6.x__ | __`latest`__ (current official release), `snapshot` (preview from `develop` branch) | `juice-shop-<version>_node6_windows_x64.zip`, `juice-shop-<version>_node6_linux_x64.tgz` |
+| 8.x     |                                                                                     | `juice-shop-<version>_node8_windows_x64.zip`, `juice-shop-<version>_node8_linux_x64.tgz` |
 
 ## Preview [![Heroku](https://heroku-badge.herokuapp.com/?app=juice-shop)](https://juice-shop.herokuapp.com)
 
@@ -200,7 +199,7 @@ If you need help with the application setup please check the
 or question in the
 [official Gitter Chat](https://gitter.im/bkimminich/juice-shop).
 
-## Contributing [![GitHub contributors](https://img.shields.io/github/contributors/bkimminich/juice-shop.svg)](https://github.com/bkimminich/juice-shop/graphs/contributors) [![Stories in Ready](https://badge.waffle.io/bkimminich/juice-shop.svg?label=ready&title=Ready)](http://waffle.io/bkimminich/juice-shop) [![JavaScript Style Guide](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com/) [![Crowdin](https://d322cqt584bo4o.cloudfront.net/owasp-juice-shop/localized.svg)](https://crowdin.com/project/owasp-juice-shop)
+## Contributing [![GitHub contributors](https://img.shields.io/github/contributors/bkimminich/juice-shop.svg)](https://github.com/bkimminich/juice-shop/graphs/contributors) [![Stories in Ready](https://badge.waffle.io/bkimminich/juice-shop.svg?label=ready&title=Ready)](http://waffle.io/bkimminich/juice-shop) [![JavaScript Style Guide](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com/) [![Crowdin](https://d322cqt584bo4o.cloudfront.net/owasp-juice-shop/localized.svg)](https://crowdin.com/project/owasp-juice-shop) [![Bountysource Activity](https://img.shields.io/bountysource/team/juice-shop/activity.svg)](https://www.bountysource.com/teams/juice-shop)
 
 We are always happy to get new contributors on board! Please check the
 following table for possible ways to do so:
